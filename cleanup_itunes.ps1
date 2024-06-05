@@ -5,7 +5,7 @@ $directoryPath = "C:\ProgramData\Apple Computer\iTunes\adi"
 if (Test-Path $directoryPath) {
     Remove-Item -Path "$directoryPath\*" -Force -Recurse
 } else {
-    Write-Host "La directory $directoryPath non esiste."
+    Write-Host "The directory $directoryPath does not exist."
 }
 
 # Restart iTunes
